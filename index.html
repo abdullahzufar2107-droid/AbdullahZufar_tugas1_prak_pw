@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 Praktikum PW</title>
+</head>
+<body>
+
+<form action="#">
+<fieldset>
+    <legend><h2>Formulir Pemesanan Mobil Travel</h2></legend>
+
+    <table>
+    <!-- Nama -->
+        <tr>
+            <td><label>Nama Supir :</label></td>
+            <td><input type="text" name="nama" placeholder="Masukkan Nama Anda" required></td>
+        </tr>
+    <!-- Email -->
+        <tr>
+            <td><label>Email Supir :</label></td>
+            <td><input type="email" name="email" placeholder="example@gmail.com" required></td>
+        </tr>
+    <!-- No. HP -->
+        <tr>
+            <td><label>No. HP :</label></td>
+            <td><input type="text" name="no hp" placeholder="08xxxxxxxxxx" required></td>
+        </tr>
+    <!-- Destinasi -->
+        <tr>
+            <td><br><label>Destinasi Pilihan :</label></td>
+            <td><br>
+            <select name="destinasi" required>
+                <option value="">-- Pilih Destinasi --</option>
+                <option value="destinasi">Medan</option>
+                <option value="destinasi">Pematang Siantar</option>
+                <option value="destinasi">Prapat</option>
+                <option value="destinasi">Padang</option>
+                <option value="destinasi">Bukittinggi</option>
+                <option value="destinasi">Pekanbaru</option>
+                <option value="destinasi">Banda Aceh</option>
+                <option value="destinasi">Jakarta</option>
+                <option value="destinasi">Semarang</option>
+                <option value="destinasi">Yogyakarta</option>
+                <option value="destinasi">Surabaya</option>
+                <option value="destinasi">Malang</option>
+                <option value="destinasi">Denpasar</option>
+                <option value="destinasi">Kupang</option>
+                <option value="destinasi">Makassar</option>
+                <option value="destinasi">Jayapura</option>
+                <option value="destinasi">Timika</option>
+            </select>
+            </td>
+        </tr>
+    <!-- Tanggal -->
+        <tr>
+            <td><br><label>Tanggal Keberangkatan :</label></td>
+            <td><br><input type="date" name="tanggal berangkat" required></td>
+        </tr>
+    <!-- Waktu -->
+        <tr>
+            <td><br><label>Waktu Keberangkatan :</label></td>
+            <td><br><input type="time" name="waktu berangkat" required></td>
+        </tr>
+    <!-- Jumlah Penumpang -->
+        <tr>
+            <td><br><label>Jumlah Penumpang yang Dibawa :</label></td>
+            <td><br><input type="number" name="jumlah penumpang" placeholder="Masukkan Angka" required></td>
+        </tr>
+    <!-- Pilihan Armada -->
+        <tr>
+            <td><br><label>Pilihan Armada</label></td>
+        </tr>
+        <tr>
+            <td>
+            <input type="radio" name="armada" value="mobil hiace" required> Mobil Hiace<br>
+            <input type="radio" name="armada" value="bus laksana"> Bus Laksana<br>
+            <input type="radio" name="armada" value="kijang innova"> Kijang Innova<br>
+            <input type="radio" name="armada" value="mercedes-benz"> Mercedes-Benz 10000 OH<br>
+            </td>
+        </tr>
+    </table>
+    <!-- Layanan Tambahan -->
+    <table><br>
+        <tr>
+            <td><label>Kondisi Kesiapan Supir :</label></td>
+        </tr>
+    </table>
+    <table border="1" cellspacing="0">
+        <tr>
+            <th align="center">
+                &nbsp;&nbsp; No. &nbsp;&nbsp;
+            </th>
+            <th>Kondisi</th>
+            <th>Ya</th>
+        </tr>
+        <tr>
+            <td align="center">1.</td>
+            <td>Apakah supir <b>tidak</b> sedang dalam kondisi ngantuk berat?</td>
+            <td><input type="checkbox" name="kesiapan" value="tidak ngantuk"></td>
+        </tr>
+        <tr>
+            <td align="center">2.</td>
+            <td>Apakah supir dalam keadaan sehat?</td>
+            <td><input type="checkbox" name="kesiapan" value="sehat"></td>
+        </tr>
+        <tr>
+            <td align="center">3.</td>
+            <td>Apakah supir <b>tidak</b> dalam pengaruh obat terlarang dan mabuk?
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td><input type="checkbox" name="kesiapan" value="tidak mabuk"></td>
+        </tr>
+    </table><br><br>
+    <!-- Upload File -->
+     <table>
+        <tr>
+            <td><label>Upload Surat Kerja :</label></td>
+            <td>&nbsp;&nbsp;<input type="file" name="identitas" required></td>
+        </tr>
+     </table><br><br>
+    <!-- Submit & Reset -->
+     <table>
+        <tr>
+            <td><input type="submit" name="Kirim"></td>
+            <td><input type="reset" name="Hapus"></td>
+        </tr>
+     </table>
+</fieldset>
+</form>
+
+</body>
+</html>
